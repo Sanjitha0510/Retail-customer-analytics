@@ -1,0 +1,168 @@
+/* Home.css */
+.container {
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 0 20px 20px 20px;
+  }
+  
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 10px;
+  }
+  
+  .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: -1px;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #FF8C00;
+    margin-right: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    transform: rotate(45deg);
+  }
+  
+  .logo-icon::before {
+    content: 'R';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .logo-text {
+    position: relative;
+    color: #FF8C00;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .demo-button, .signup-button {
+    background-color: transparent;
+    color: #FF8C00;
+    padding: 10px 20px;
+    border: 2px solid #FF8C00;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 120px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .demo-button::before, .signup-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: #FF8C00;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+    z-index: -1;
+  }
+  
+  .demo-button:hover, .signup-button:hover {
+    color: white;
+  }
+  
+  .demo-button:hover::before, .signup-button:hover::before {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .demo-button:active, .signup-button:active {
+    transform: scale(0.95);
+  }
+  
+  .content {
+    text-align: center;
+    margin-top: 10vh;
+  }
+  
+  .intro-text {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #FF8C00;
+  }
+  
+  .headline {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    line-height: 1.2;
+  }
+  
+  .subtext {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: gray;
+    line-height: 1.6;
+  }
+  
+  .cta-button {
+    background-color: #FF8C00;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cta-button::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(45deg);
+    transition: all 0.5s ease;
+  }
+  
+  .cta-button:hover::after {
+    left: 100%;
+    top: 100%;
+  }
+  
+  .cta-button:active {
+    transform: scale(0.95);
+  }
+  

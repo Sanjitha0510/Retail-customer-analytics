@@ -1,0 +1,261 @@
+.analytics-container {
+    padding: 2rem;
+    background: #0f0f0f;
+    min-height: 100vh;
+    color: white;
+  }
+  
+  .loading, .error {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  .error {
+    color: #ff4444;
+    background: #2d2d2d;
+    border-radius: 4px;
+  }
+  
+  .analysis-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+    background: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .demographical-analysis, .top-selling {
+    background: #2d2d2d;
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+  
+  h2 {
+    color: #FF8C00;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #FF8C00;
+    padding-bottom: 0.5rem;
+  }
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.2rem;
+  }
+  
+  .category-card {
+    background: #3d3d3d;
+    padding: 1rem;
+    border-radius: 6px;
+  }
+  
+  .category-card h3 {
+    color: #FF8C00;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+  }
+  
+  .product-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #4d4d4d;
+  }
+  
+  .price-range {
+    color: #a0a0a0;
+  }
+  
+  .product-name {
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  .sales-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+  }
+  
+  .main-chart {
+    background: #2d2d2d;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .side-charts {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  
+  .behavior-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  /* Chart Containers */
+  .chart-container {
+    background: #2d2d2d;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+  }
+  
+  .chart-container:hover {
+    transform: translateY(-3px);
+  }
+
+  .chart-container {
+    background: #2d2d2d;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #3d3d3d;
+  }
+  
+  /* Bar Chart Styling */
+  .recharts-bar-rectangle {
+    fill: #FF8C00 !important;
+    transition: fill 0.3s ease;
+  }
+  
+  .recharts-bar-rectangle:hover {
+    fill: #FFA500 !important;
+  }
+  
+  /* Line Chart Styling */
+  .recharts-line {
+    stroke: #FF8C00 !important;
+    stroke-width: 2px !important;
+  }
+  
+  .recharts-dot {
+    fill: #FF8C00 !important;
+    stroke: #2d2d2d !important;
+    stroke-width: 2px !important;
+  }
+  
+  /* Pie Chart Styling */
+  .recharts-sector {
+    stroke-width: 2px !important;
+    transition: fill 0.3s ease;
+  }
+  
+  /* Legend Styling */
+  .recharts-legend-item-text {
+    color: #a0a0a0 !important;
+  }
+  
+  /* Tooltip Styling */
+  .recharts-tooltip-wrapper {
+    background: #3d3d3d !important;
+    border: 1px solid #4d4d4d !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2) !important;
+  }
+  
+  .recharts-tooltip-label {
+    color: #FF8C00 !important;
+    font-weight: 500 !important;
+  }
+  
+  .recharts-tooltip-item-value {
+    color: white !important;
+  }
+  
+  /* Axis Styling */
+  .recharts-cartesian-axis-tick-value {
+    fill: #a0a0a0 !important;
+  }
+  
+  .recharts-cartesian-axis-line {
+    stroke: #4d4d4d !important;
+  }
+  
+  .recharts-cartesian-grid line {
+    stroke: #3d3d3d !important;
+  }
+  
+  /* Animation for charts */
+  @keyframes chart-entrance {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .chart-container > * {
+    animation: chart-entrance 0.6s ease-out;
+  }
+  
+  /* Gradient effects for line chart fill */
+  .recharts-area-area {
+    fill: url(#gradientFill) !important;
+  }
+  
+  /* Add this gradient definition in your chart component */
+  .defs-clip-path {
+    display: none;
+  }
+  
+  /* Product Slideshow Styles */
+/* .product-slideshow {
+    margin: 20px 0;
+    padding: 15px;
+    background: #2d2d2d;
+    border-radius: 8px;
+  }
+  
+  .slide-item {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .product-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 0 auto;
+  }
+  
+  .image-placeholder {
+    width: 200px;
+    height: 200px;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin: 0 auto;
+    color: #666;
+  }
+  
+  .product-info {
+    margin-top: 10px;
+  }
+  
+  .product-info h4 {
+    color: #FF8C00;
+    margin-bottom: 5px;
+    font-size: 1rem;
+  }
+  
+  .product-info p {
+    color: #a0a0a0;
+    font-size: 0.9rem;
+  }
+   */
+  /* Slick Carousel Overrides */
+  /* .slick-prev:before, 
+  .slick-next:before {
+    color: #FF8C00 !important;
+  }
+  
+  .slick-dots li button:before {
+    color: #FF8C00 !important;
+  } */

@@ -1,0 +1,155 @@
+/* Customers.css */
+.customers-container {
+    padding: 2rem;
+    background-color: #0f0f0f;
+    min-height: 100vh;
+    color: white;
+  }
+  
+  .upload-section, .view-section {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    color: #FF8C00;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+  }
+  
+  .upload-form {
+    background: #2d2d2d;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .drag-drop-area {
+    border: 2px dashed #FF8C00;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    background: #1a1a1a;
+    margin-bottom: 1.5rem;
+  }
+  
+  .drag-active {
+    border-color: #FFA500;
+    background: rgba(255, 140, 0, 0.1);
+  }
+  
+  .drag-drop-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .upload-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .file-input {
+    display: none;
+  }
+  
+  .file-label {
+    background: #FF8C00;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .file-label:hover {
+    background: #FFA500;
+  }
+  
+  .selected-file {
+    color: #a0a0a0;
+    margin-top: 1rem;
+  }
+  
+  .upload-button {
+    width: 100%;
+    padding: 1rem;
+    background: #FF8C00;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .upload-button:disabled {
+    background: #666;
+    cursor: not-allowed;
+  }
+  
+  .error-message {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: rgba(255, 0, 0, 0.1);
+    border-left: 4px solid #ff4444;
+    border-radius: 4px;
+    color: #ff4444;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .refresh-button {
+    background: #FF8C00;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .refresh-button:hover {
+    background: #FFA500;
+  }
+  
+  .table-container {
+    background: #2d2d2d;
+    border-radius: 12px;
+    padding: 1.5rem;
+    overflow-x: auto;
+  }
+  
+  .files-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .files-table th {
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 2px solid #FF8C00;
+    color: #FF8C00;
+  }
+  
+  .files-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #444;
+  }
+  
+  .files-table a {
+    color: #FF8C00;
+    text-decoration: none;
+  }
+  
+  .files-table a:hover {
+    text-decoration: underline;
+  }
+  

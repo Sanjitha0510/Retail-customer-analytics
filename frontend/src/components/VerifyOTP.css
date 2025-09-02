@@ -1,0 +1,117 @@
+/* VerifyOTP.css */
+.verify-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a;
+    padding: 20px;
+  }
+  
+  .verify-card {
+    background-color: #2d2d2d;
+    padding: 2.5rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .verify-title {
+    color: #FF8C00;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .verify-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .otp-input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: 2px solid #FF8C00;
+    border-radius: 8px;
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .otp-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 140, 0, 0.3);
+  }
+  
+  .info-text {
+    color: #a0a0a0;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .verify-button {
+    width: 100%;
+    padding: 1rem;
+    background: #FF8C00;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .verify-button:hover:not(:disabled) {
+    background: #FFA500;
+  }
+  
+  .verify-button:disabled {
+    background: #666;
+    cursor: not-allowed;
+  }
+  
+  .verify-button.loading {
+    position: relative;
+    color: transparent;
+  }
+  
+  .verify-button.loading::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+  }
+  
+  .error-message {
+    padding: 1rem;
+    background: rgba(255, 0, 0, 0.1);
+    border-left: 4px solid #ff4444;
+    border-radius: 4px;
+    color: #ff4444;
+    margin-bottom: 1rem;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  

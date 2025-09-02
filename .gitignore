@@ -1,0 +1,55 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Node.js
+node_modules/
+**/node_modules/
+.npm/
+.pnpm-store/
+
+# Build outputs
+build/
+dist/
+.next/
+coverage/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+.venv/
+venv/
+ENV/
+.ipynb_checkpoints/
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+
+# Project-specific large/temporary data
+api/uploads/
+api/output/
+api/temp/
+
+# Keep placeholder files if needed
+!api/uploads/.gitkeep
+!api/output/.gitkeep
+!api/temp/.gitkeep
